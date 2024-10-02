@@ -52,7 +52,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Function to toggle the theme
     function toggleTheme() {
         const currentTheme = document.body.getAttribute('data-bs-theme');
         const newTheme = currentTheme === 'light' ? 'dark' : 'light';
@@ -66,45 +65,48 @@ document.addEventListener('DOMContentLoaded', function () {
             themeIcon.classList.remove('bi-lightbulb-fill');
             themeIcon.classList.add('bi-lightbulb');
         }
-        
-        // Save the theme to localStorage for persistence
-        localStorage.setItem('theme', newTheme);
+            localStorage.setItem('theme', newTheme);
     }
 
-    // Load the saved theme from localStorage on page load
     const savedTheme = localStorage.getItem('theme') || 'light';
     document.body.setAttribute('data-bs-theme', savedTheme);
 
-    // Add event listener to the theme toggle button
     document.getElementById('theme-toggle-btn').addEventListener('click', toggleTheme);
 });
 
-function adjustViewportForSmartphone() {
-    function isSmartphone() {
-        return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    }
+const resizeOps = () => {
+    document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+  };
 
-    function setViewport(content) {
-        let viewport = document.querySelector("meta[name='viewport']");
-        if (!viewport) {
-            viewport = document.createElement('meta');
-            viewport.name = 'viewport';
-            document.head.appendChild(viewport);
-        }
-        viewport.setAttribute("content", content);
-    }
+  resizeOps();
+  window.addEventListener("resize", resizeOps);
 
-    function adjustViewportOnResize() {
-        if (isSmartphone()) {
-            // Adjust the viewport only if needed to accommodate dynamic changes
-            setViewport("width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes");
-        }
-    }
+// function adjustViewportForSmartphone() {
+//     function isSmartphone() {
+//         return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+//     }
 
-    if (isSmartphone()) {
-        setViewport("width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no");
-        window.addEventListener('resize', adjustViewportOnResize);
-    }
-}
+//     function setViewport(content) {
+//         let viewport = document.querySelector("meta[name='viewport']");
+//         if (!viewport) {
+//             viewport = document.createElement('meta');
+//             viewport.name = 'viewport';
+//             document.head.appendChild(viewport);
+//         }
+//         viewport.setAttribute("content", content);
+//     }
 
-document.addEventListener("DOMContentLoaded", adjustViewportForSmartphone);
+//     function adjustViewportOnResize() {
+//         if (isSmartphone()) {
+//             // Adjust the viewport only if needed to accommodate dynamic changes
+//             setViewport("width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes");
+//         }
+//     }
+
+//     if (isSmartphone()) {
+//         setViewport("width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no");
+//         window.addEventListener('resize', adjustViewportOnResize);
+//     }
+// }
+
+// document.addEventListener("DOMContentLoaded", adjustViewportForSmartphone);
