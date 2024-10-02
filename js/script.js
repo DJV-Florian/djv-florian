@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 1000);
     }
     document.addEventListener('touchend', function (e) {
+        e.preventDefault();
         if (sidebar.classList.contains('active')) {
             if (!sidebar.contains(e.target) && !sidebarCollapse.contains(e.target)) {
                 sidebar.classList.remove('active');
