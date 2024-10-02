@@ -39,11 +39,11 @@ document.addEventListener('DOMContentLoaded', function () {
             fadeOut(sidebarCollapse);
         }, 1000);
     }
-    document.addEventListener('touchstart', function (e) {
-        if (!sidebar.classList.contains('active')) {
+    document.addEventListener('touchend', function (e) {
+        if (sidebar.classList.contains('active')) {
             if (!sidebar.contains(e.target) && !sidebarCollapse.contains(e.target)) {
-                sidebar.classList.add('active');
-                sidebarCollapse.classList.add('active');
+                sidebar.classList.remove('active');
+                sidebarCollapse.classList.remove('active');
             }
         }
     });
