@@ -41,10 +41,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     document.addEventListener('touchend', function (e) {
         e.preventDefault();
-        if (sidebar.classList.contains('active')) {
+        if (!sidebar.classList.contains('active')) {
             if (!sidebar.contains(e.target) && !sidebarCollapse.contains(e.target)) {
-                sidebar.classList.remove('active');
-                sidebarCollapse.classList.remove('active');
+                sidebar.classList.add('active');
+                sidebarCollapse.classList.add('active');
             }
         }
     });
