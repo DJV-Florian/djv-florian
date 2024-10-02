@@ -43,10 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (sidebar.classList.contains('active') && !sidebar.contains(e.target) && !sidebarCollapse.contains(e.target)) {
             sidebar.classList.remove('active');
             sidebarCollapse.classList.remove('active');
-        } else if (!sidebar.classList.contains('active') && !sidebar.contains(e.target) && !sidebarCollapse.contains(e.target)) {
-            sidebar.classList.add('active');
-            sidebarCollapse.classList.add('active');
-        }
+        } 
     });
 });
 
@@ -85,12 +82,25 @@ function adjustViewportForSmartphone() {
         return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     }
 
-    if (isSmartphone()) {
+    function setViewport() {
         const viewport = document.querySelector("meta[name='viewport']");
-        
         if (viewport) {
             viewport.setAttribute("content", "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no");
         }
+    }
+
+    function adjustViewportOnResize() {
+        if (isSmartphone()) {
+            const viewport = document.querySelector("meta[name='viewport']");
+            if (viewport) {
+                viewport.setAttribute("content", "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no");
+            }
+        }
+    }
+
+    if (isSmartphone()) {
+        setViewport();
+        window.addEventListener('resize', adjustViewportOnResize);
     }
 }
 
