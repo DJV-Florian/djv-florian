@@ -152,8 +152,8 @@ strong{
     top: 0;
     position: -webkit-sticky;
     position: sticky;
-    min-width: 30vw;
-    max-width: 30vw;
+    min-width: 250px;
+    max-width: 250px;
     min-height: 100vh;
     height: 25vh;
     transition: all 0.3s;
@@ -280,13 +280,16 @@ a[data-toggle="collapse"]{
 }
 
 @media (max-width: 768px){
+    body, html {
+        overflow-x: hidden;
+        height: 100%;
+    }
     #sidebar {
         position: sticky;
         top: 0;
         position: -webkit-sticky;
-        position: sticky;
-        min-width: 200px;
-        max-width: 200px;
+        min-width: 70vw;
+        max-width: 90vw;
         min-height: 100vh;
     }
     #sidebar.active{
@@ -333,12 +336,33 @@ a[data-toggle="collapse"]{
         -ms-transform: translateX(50%);
         transform: translateX(50%);
     }
+    #footer {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+        justify-content: center; /* Centers content on smaller screens */
+    }
+
+    #footer #cgu,
+    #footer #cgu2 {
+        margin-left: 10px; /* Reduces space between elements */
+    }  
 }
 
-#footer{
+#footer {
     position: relative;
     z-index: 10;
+    padding: 10px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
+
+#footer #cgu,
+#footer #cgu2 {
+    margin-left: 20px;
+    font-size: 1em;
+}
+
 
 body[data-bs-theme="dark"] #footer{
     background-color: #1C1C1C;
@@ -347,20 +371,8 @@ body[data-bs-theme="light"] #footer{
     background-color: #FAFAFA;
 }
 
-#footer #cgu{
-    position: absolute;
-    right: 0;
-    bottom: 10px;
-}
-
-#footer #cgu2{
-    position: absolute;
-    right: 250px;
-    bottom: 10px;
-}
-
 .pdc{
-    padding: 10px;    
+    padding: 30px;    
 }
 
 body[data-bs-theme="dark"] .pdcli{
