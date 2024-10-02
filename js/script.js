@@ -40,10 +40,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 1000);
     }
     document.addEventListener('touchstart', function (e) {
-        if (sidebar.classList.contains('active') && !sidebar.contains(e.target) && !sidebarCollapse.contains(e.target)) {
-            sidebar.classList.remove('active');
-            sidebarCollapse.classList.remove('active');
-        } 
+        if (!sidebar.classList.contains('active')) {
+            if (!sidebar.contains(e.target) && !sidebarCollapse.contains(e.target)) {
+                sidebar.classList.add('active');
+                sidebarCollapse.classList.add('active');
+            }
+        }
     });
 });
 
