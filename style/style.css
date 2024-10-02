@@ -282,7 +282,7 @@ a[data-toggle="collapse"]{
 @media (max-width: 768px){
     body, html {
         overflow-x: hidden;
-        height: 100vh;
+        height: 100%;
     }
     #sidebar {
         position: sticky;
