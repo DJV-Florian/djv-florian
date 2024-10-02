@@ -281,7 +281,13 @@ a[data-toggle="collapse"]{
 
 @media (max-width: 768px){
     #sidebar {
-        margin-left: 0px;
+        position: sticky;
+        top: 0;
+        position: -webkit-sticky;
+        position: sticky;
+        min-width: 200px;
+        max-width: 200px;
+        min-height: 100vh;
     }
     #sidebar.active{
         min-width: 80px;
