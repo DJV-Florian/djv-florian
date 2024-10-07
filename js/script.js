@@ -74,17 +74,18 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('theme-toggle-btn').addEventListener('click', toggleTheme);
 });
 
-        // Function to set the sidebar height dynamically
-        function updateSidebarHeight() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.style.height = `${window.innerHeight}px`;
-        }
+function updateSidebarHeight() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.style.height = `${window.innerHeight}px`;
+}
 
-        // Set initial height
-        updateSidebarHeight();
+updateSidebarHeight();
 
-        // Update height on window resize
-        window.addEventListener('resize', updateSidebarHeight);
+window.addEventListener('resize', updateSidebarHeight);
+
+$('.carousel').carousel({
+    interval: 2000
+})
 
 // function adjustViewportForSmartphone() {
 //     function isSmartphone() {

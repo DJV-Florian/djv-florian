@@ -343,6 +343,10 @@ body[data-bs-theme="light"] #footer{
     background-color: #FAFAFA;
 }
 
+body[data-bs-theme="light"] h1{
+    color: #6200EE
+}
+
 .pdc{
     padding: 30px;
     flex: 1;    
@@ -352,3 +356,16 @@ body[data-bs-theme="dark"] .pdcli{
     color: #999;
 }
 
+.pdc a{
+    color: #BBB;
+    text-decoration: underline;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 1em;
+    margin: -1em;
+}
+
+body[data-bs-theme="light"] .pdc a{
+    color: #626262
+}

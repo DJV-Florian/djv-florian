@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style/style.css">
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
   </head>
   <body data-bs-theme="light" class="d-flex flex-column min-vh-100">
   <div class="wrapper">
@@ -34,20 +35,20 @@
           <a href="game.html" class="full-bar">Jouer</a>
           <a href="game.html" class="mini-bar"><i class="bi bi-controller"></i></a>
         </li>
-        <li>
+        <!-- <li>
           <a href="team.html" class="full-bar">L'équipe</a>
           <a href="team.html" class="mini-bar"><i class="bi bi-cup-hot-fill"></i></a>
         </li>
         <li>
           <a href="contact.html" class="full-bar">Contact</a>
           <a href="contact.html" class="mini-bar"><i class="bi bi-person-lines-fill"></i></a>
-        </li>
+        </li> -->
       </ul>
       <div class="container">
         <button type="button" id="theme-toggle-btn" class="btn btn-light"><i class="bi bi-lightbulb"></i></button>
       </div>
       <div class="itchContainer">
-        <a href="https://kaytomasu.itch.io/" id="itch"><i class="fab fa-itch-io fa-lg"></i></a>
+        <a href="https://kaytomasu.itch.io/" id="itch" target="_blank"><i class="fab fa-itch-io fa-lg"></i></a>
       </div>
     </nav>
 
@@ -61,8 +62,18 @@
 
             <div class="pdc">
               <h1>Bonjour !</h1>
-              <p>Si vous êtes là, c'est que vous avez trouvé mon site de présentation dans le cadre de la formation FIF Level One à Mode83.</p>
-              <p>Qui suis-je ? -> </p>
+              <p>Si vous êtes là, c'est que vous avez trouvé mon site de présentation dans le cadre de la formation FIF Level One à <a href="formation.html">Mode83.</a></p>
+              <h2>Qui suis-je ?</h2>
+              <p>Florian, 25 ans, je suis passionné d'automobile et de jeu vidéo. J'aime la programmation, et plus particulièrement le code "graphique", comprenant notamment les shaders.</p>
+              <h2>Pourquoi suis-je dans cette formation ?</h2>
+              <p>Je suis ici afin de développer mes compétences diverses et variées, tel que le développement, la modélisation 3D, le design, ou même pour apprendre tout type de technologies (tel que les technologies web)</p>
+              <h2>Que fais-je ?</h2>
+              <p>Dans cette formation, j'ai notamment été présent sur la partie developpement des niveaux, tel que le niveau de la montagne ou même du menu principal (lié au jeu réalisé dans le cadre de la formation)</p>
+              <p>Plus personnellement, et comme précisé plus tôt, je suis un adorateur des shaders, j'ai été capable d'apprendre le RayMarching (bon fichier .frag à joindre), ou de réaliser du post process pour mon jeu "Steal And Go!!"</p>
+              <div style="display: flex; justify-content: center; align-items: center; width: auto; height: auto; overflow: hidden; flex: 1;"><canvas class="glslCanvas" data-fragment-url="frag/march.frag" width="400" height="400"></canvas></div>
+              <h2>Steal And Go? Kesako?</h2>
+              <p>"Steal And Go!!" est un jeu que j'ai réalisé en 48h lors de la <a href="https://itch.io/jam/kenney-jam-2024" target="_blank"> Kenney Jam 2024 </a> (tenu du 19 juillet 2024 au 21 juillet 2024), se trouvant être une Game Jam où la difficulté est de créer un jeu, un concept ainsi que tout ce qui va avec, en partant d'assets pré-fait par Kenney.</p>
+              <!-- Ajouter image du PP before + after et ajouter un include vers itch -->
             </div>
             
             <footer class="text-center text-lg-start" id="footer">
