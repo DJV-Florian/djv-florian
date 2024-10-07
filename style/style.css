@@ -254,17 +254,17 @@ a[data-toggle="collapse"]{
 @media (max-width: 768px){
     body, html {
         overflow-x: hidden;
-        height: 100vh;
+        height: 100%;
         margin: 0;
     }
     #sidebar {
         position: sticky;
         top: 0;
         bottom: 0;
-        overflow-y: hidden;
-        position: -webkit-sticky;
+        overflow-y: auto; /* Allow scrolling if content exceeds height */
         min-width: 70vw;
         max-width: 90vw;
+        height: 100vh; /* Initial height value */
     }
     #sidebar.active{
         min-width: 80px;
