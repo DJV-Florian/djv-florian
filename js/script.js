@@ -74,12 +74,10 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('theme-toggle-btn').addEventListener('click', toggleTheme);
 });
 
-const resizeOps = () => {
-    document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
-  };
-
-  resizeOps();
-  window.addEventListener("resize", resizeOps);
+$(window).scroll(function() {
+    var windowHeight = $(window).height();
+    $(".sidebar").css("height", windowHeight);
+});
 
 // function adjustViewportForSmartphone() {
 //     function isSmartphone() {

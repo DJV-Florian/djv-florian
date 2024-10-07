@@ -263,7 +263,6 @@ a[data-toggle="collapse"]{
         position: -webkit-sticky;
         min-width: 70vw;
         max-width: 90vw;
-        min-height: 90vh;
     }
     #sidebar.active{
         min-width: 80px;
