@@ -260,6 +260,8 @@ a[data-toggle="collapse"]{
     #sidebar {
         position: sticky;
         top: 0;
+        bottom: 0;
+        overflow-y: hidden;
         position: -webkit-sticky;
         min-width: 70vw;
         max-width: 90vw;

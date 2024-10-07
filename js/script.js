@@ -74,11 +74,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('theme-toggle-btn').addEventListener('click', toggleTheme);
 });
 
-$(window).scroll(function() {
-    var windowHeight = $(window).height();
-    $(".sidebar").css("height", windowHeight);
-});
-
 // function adjustViewportForSmartphone() {
 //     function isSmartphone() {
 //         return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
