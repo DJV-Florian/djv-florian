@@ -1,5 +1,10 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
+body, html{
+    height: 100%;
+    margin: 0;
+}
+
 /* Light theme */
 body[data-bs-theme="light"] {
     background-color: #ffffff;
@@ -105,11 +110,7 @@ body[data-bs-theme="light"] #sidebarCollapse span{
     background: #212529;
 }
 
-h3{
-    color: white
-}
-
-strong{
+h3, strong{
     color: white
 }
 
@@ -159,10 +160,7 @@ strong{
     transition: all 0.3s;
 }
 
-#sidebar .sidebar-header strong{
-    display: none;
-}
-
+#sidebar .sidebar-header strong,
 #sidebar.active .sidebar-header h3{
     display: none;
 }
@@ -180,10 +178,7 @@ body[data-bs-theme="light"] #sidebar .sidebar-header{
     background: #6200EE;
 }
 
-#sidebar.active .full-bar{
-    display: none;
-}
-
+#sidebar.active .full-bar,
 #sidebar .mini-bar{
     display: none;
 }
@@ -229,12 +224,6 @@ body[data-bs-theme="light"] #sidebar ul li a:hover {
     /* background: #6d7fcc; */
 }
 
-ul ul a{
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    /* background: #6d7fcc; */
-}
-
 #sidebar.active{
     min-width: 80px;
     max-width: 80px;
@@ -258,32 +247,15 @@ ul ul a{
     padding: 10px !important;
 }
 
-#sidebar.active .dropdown-toggle::after{
-    top: auto;
-    bottom: 10px;
-    right: 50%;
-    -webkit-transform: translateX(50%);
-    -ms-transform: translateX(50%);
-    transform: translateX(50%);
-}
-
 a[data-toggle="collapse"]{
     position: relative;
-}
-
-.dropdown-toggle::after{
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
 }
 
 @media (max-width: 768px){
     body, html {
         overflow-x: hidden;
         height: 100vh;
-        height: calc(var(--vh, 1vh) * 100);
+        margin: 0;
     }
     #sidebar {
         position: sticky;
@@ -291,7 +263,7 @@ a[data-toggle="collapse"]{
         position: -webkit-sticky;
         min-width: 70vw;
         max-width: 90vw;
-        min-height: 110vh;
+        min-height: 90vh;
     }
     #sidebar.active{
         min-width: 80px;
@@ -329,23 +301,21 @@ a[data-toggle="collapse"]{
         padding: 10px !important;
     }
 
-    .dropdown-toggle::after{
-        top: auto;
-        bottom: 10px;
-        right: 50%;
-        -webkit-transform: translateX(50%);
-        -ms-transform: translateX(50%);
-        transform: translateX(50%);
-    }
     #footer {
-        font-size: 0.9rem; /* Adjust font size for smaller screens */
-        justify-content: center; /* Centers content on smaller screens */
+        font-size: 0.9rem;
+        justify-content: center;
     }
 
     #footer #cgu,
     #footer #cgu2 {
-        margin-left: 10px; /* Reduces space between elements */
+        margin-left: 10px;
     }  
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 #footer {
@@ -373,9 +343,11 @@ body[data-bs-theme="light"] #footer{
 }
 
 .pdc{
-    padding: 30px;    
+    padding: 30px;
+    flex: 1;    
 }
 
 body[data-bs-theme="dark"] .pdcli{
     color: #999;
 }
+
