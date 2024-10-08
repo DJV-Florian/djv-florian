@@ -3,10 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-    <meta name="description" content="Site de présentation de projet FIF Level-One">
-    <meta name="author" content="DJV-Florian">
-    <meta name="copyright" content="Florian Devin">
-    <meta name="robots" content="noindex, nofollow">
     <title>FIF Level One - Florian</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -42,10 +38,6 @@
           <a href="galerie.html" class="full-bar">Galerie</a>
           <a href="galerie.html" class="mini-bar"><i class="bi bi-card-image"></i></a>
         </li> 
-        <!-- <li>
-          <a href="contact.html" class="full-bar">Contact</a>
-          <a href="contact.html" class="mini-bar"><i class="bi bi-person-lines-fill"></i></a>
-        </li> -->
       </ul>
       <div class="container">
         <button type="button" id="theme-toggle-btn" class="btn btn-light"><i class="bi bi-lightbulb"></i></button>
@@ -57,22 +49,42 @@
 
           <!-- Page Content -->
     <div id="content">
-        <button type="button" id="sidebarCollapse" class="navbar-btn active">
-        <span></span>
-        <span></span>
-        <span></span>
-        </button>
-        <!-- TODO: RECOMPILE THE GAME WITH RESOLUTION SET -->
-        <div style="display: flex; justify-content: center; align-items: center; width: 100vw; height: auto; overflow: hidden; flex: 1;"><iframe frameborder="0" src="https://itch.io/embed-upload/11666357?color=333333" allowfullscreen="" width="960" height="620"><a href="https://djv-florian.itch.io/niveau-formation">Play niveau formation on itch.io</a></iframe></div>
-        <footer class="text-center text-lg-start" id="footer">
-          <!-- Footer -->
-              <div class="text-lg-start p-3">
-                  @ 2024 Copyright: Florian Devin 
-                  <a href="pdc.html" id="cgu">Politique de confidentialité</a>
-                  <a href="cgu.html" id="cgu2">Conditions Générales d'Utilisations</a>
+            <button type="button" id="sidebarCollapse" class="navbar-btn active">
+            <span></span>
+            <span></span>
+            <span></span>
+            </button>
+            <div class="pdc">
+              <h1>Galerie</h1>
+              <h2>Quelques images du jeu</h2>
+              <div class="container-img">
+                <input type="radio" name="slider" id="item-1" checked>
+                <input type="radio" name="slider" id="item-2">
+                <input type="radio" name="slider" id="item-3">
+              <div class="cards">
+                <label class="card" for="item-1" id="img-1">
+                  <img src="img/Capture d'écran 2024-10-07 144643.png">
+                </label>
+                <label class="card" for="item-2" id="img-2">
+                  <img src="img/Capture d'écran 2024-10-07 144658.png">
+                </label>
+                <label class="card" for="item-3" id="img-3">
+                  <img src="img/Capture d'écran 2024-10-07 144554.png">
+                </label>
               </div>
-          </footer>
-      </div>
+              <h2>Mes projets perso / shaders</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, expedita natus vitae qui quibusdam illum autem, eum saepe modi quam corrupti blanditiis hic quia dicta accusamus suscipit, dolor veritatis dolore.</p>
+            </div>
+            <footer class="text-center text-lg-start" id="footer">
+              <!-- Footer -->
+                  <div class="text-lg-start p-3">
+                      @ 2024 Copyright: Florian Devin 
+                      <a href="pdc.html" id="cgu">Politique de confidentialité</a>
+                      <a href="cgu.html" id="cgu2">Conditions Générales d'Utilisations</a>
+                  </div>
+              </footer>
+      </nav>
+    </div>
   </div>
   </body>
 </html>

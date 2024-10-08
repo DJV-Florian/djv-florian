@@ -83,36 +83,3 @@ updateSidebarHeight();
 
 window.addEventListener('resize', updateSidebarHeight);
 
-$('.carousel').carousel({
-    interval: 2000
-})
-
-// function adjustViewportForSmartphone() {
-//     function isSmartphone() {
-//         return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-//     }
-
-//     function setViewport(content) {
-//         let viewport = document.querySelector("meta[name='viewport']");
-//         if (!viewport) {
-//             viewport = document.createElement('meta');
-//             viewport.name = 'viewport';
-//             document.head.appendChild(viewport);
-//         }
-//         viewport.setAttribute("content", content);
-//     }
-
-//     function adjustViewportOnResize() {
-//         if (isSmartphone()) {
-//             // Adjust the viewport only if needed to accommodate dynamic changes
-//             setViewport("width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes");
-//         }
-//     }
-
-//     if (isSmartphone()) {
-//         setViewport("width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no");
-//         window.addEventListener('resize', adjustViewportOnResize);
-//     }
-// }
-
-// document.addEventListener("DOMContentLoaded", adjustViewportForSmartphone);
