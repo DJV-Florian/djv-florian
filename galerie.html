@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <meta name="description" content="Site de présentation de projet FIF Level-One">
+    <meta name="author" content="DJV-Florian">
+    <meta name="copyright" content="Florian Devin">
+    <meta name="robots" content="noindex, nofollow">
     <title>FIF Level One - Florian</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -40,16 +44,16 @@
         </li> 
       </ul>
       <div class="container">
-        <button type="button" id="theme-toggle-btn" class="btn btn-light"><i class="bi bi-lightbulb"></i></button>
+        <button type="button" id="theme-toggle-btn" class="btn btn-light" aria-label="Theme Switch Button"><i class="bi bi-lightbulb"></i></button>
       </div>
       <div class="itchContainer">
-        <a href="https://kaytomasu.itch.io/" id="itch" target="_blank"><i class="fab fa-itch-io fa-lg"></i></a>
+        <a href="https://kaytomasu.itch.io/" id="itch" target="_blank" aria-label="itch.io link"><i class="fab fa-itch-io fa-lg"></i></a>
       </div>
     </nav>
 
           <!-- Page Content -->
     <div id="content">
-            <button type="button" id="sidebarCollapse" class="navbar-btn active">
+            <button type="button" id="sidebarCollapse" class="navbar-btn active" aria-label="Sidebar Button">
             <span></span>
             <span></span>
             <span></span>
@@ -57,30 +61,48 @@
             <div class="pdc">
               <h1>Galerie</h1>
               <h2>Quelques images du jeu</h2>
+              <p>Voici quelques images de présentation du jeu vidéo réalisé dans le cadre de ma formation</p>
               <div class="container-img">
                 <input type="radio" name="slider" id="item-1" checked>
                 <input type="radio" name="slider" id="item-2">
                 <input type="radio" name="slider" id="item-3">
               <div class="cards">
-                <label class="card" for="item-1" id="img-1">
-                  <img src="img/Capture d'écran 2024-10-07 144643.png">
+                <label class="card" for="item-1" id="img-1" aria-label="Screenshot de l'animation du menu">
+                  <img src="img/Capture d'écran 2024-10-07 144643.png" alt="Screenshot de l'animation du menu">
                 </label>
-                <label class="card" for="item-2" id="img-2">
-                  <img src="img/Capture d'écran 2024-10-07 144658.png">
+                <label class="card" for="item-2" id="img-2" aria-label="Screenshot du menu">
+                  <img src="img/Capture d'écran 2024-10-07 144658.png" alt="Screenshot du menu">
                 </label>
-                <label class="card" for="item-3" id="img-3">
-                  <img src="img/Capture d'écran 2024-10-07 144554.png">
+                <label class="card" for="item-3" id="img-3" aria-label="Screenshot de la fin du niveau">
+                  <img src="img/Capture d'écran 2024-10-07 144554.png" alt="Screenshot de la fin du niveau">
                 </label>
               </div>
+              </div>
               <h2>Mes projets perso / shaders</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, expedita natus vitae qui quibusdam illum autem, eum saepe modi quam corrupti blanditiis hic quia dicta accusamus suscipit, dolor veritatis dolore.</p>
+              <p>Voici quelques images de présentation de mes projets personnels.</p>
+              <div class="container-img2">
+                <input type="radio" name="slider2" id="item-12" checked>
+                <input type="radio" name="slider2" id="item-22">
+                <input type="radio" name="slider2" id="item-32">
+              <div class="cards2">
+                <label class="card2" for="item-12" id="img-12" aria-label="Screenshot du menu titre de Steal And Go">
+                  <img src="img/Screenshot 2024-07-21 141008.png" alt="Screenshot du menu titre de Steal And Go">
+                </label>
+                <label class="card2" for="item-22" id="img-22" aria-label="Screenshot de Post Process">
+                  <img src="img/postprocess.png" alt="Screenshot de Post Process">
+                </label>
+                <label class="card2" for="item-32" id="img-32" aria-label="Screenshot d'un modèle 3D">
+                  <img src="img/image.png" alt="Screenshot d'un modèle 3D">
+                </label>
+              </div>
+              </div>
             </div>
             <footer class="text-center text-lg-start" id="footer">
               <!-- Footer -->
                   <div class="text-lg-start p-3">
                       @ 2024 Copyright: Florian Devin 
-                      <a href="pdc.html" id="cgu">Politique de confidentialité</a>
-                      <a href="cgu.html" id="cgu2">Conditions Générales d'Utilisations</a>
+                      <a href="pdc.html" id="cgu" aria-label="Politique de confidentialité link">Politique de confidentialité</a>
+                      <a href="cgu.html" id="cgu2" aria-label="CGU link">Conditions Générales d'Utilisations</a>
                   </div>
               </footer>
       </nav>
