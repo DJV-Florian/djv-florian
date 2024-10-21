@@ -1,95 +1,83 @@
 <!doctype html>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-    <meta name="description" content="Site de présentation de projet FIF Level-One">
-    <meta name="author" content="DJV-Florian">
-    <meta name="copyright" content="Florian Devin">
-    <meta name="robots" content="noindex, nofollow">
-    <title>FIF Level One - Florian</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style/style.css">
-    <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
-  </head>
-  <body data-bs-theme="light" class="d-flex flex-column min-vh-100">
-  <div class="wrapper">
-
-      <!-- Sidebar -->
-    <nav id="sidebar" class="active">
-      <div class="sidebar-header">
-        <h3 class="sidebar-title">FIF - Level One</h3>
-        <strong>FIF</strong>
-      </div>
-
-      <ul class="list-unstyled components">
-        <li>
-          <a href="index.html" class="full-bar">Accueil</a>
-          <a href="index.html" class="mini-bar"><i class="bi bi-house-fill"></i></a>
-        </li>
-        <li>
-          <a href="formation.html" class="full-bar">Formation</a>
-          <a href="formation.html" class="mini-bar"><i class="bi bi-book-fill"></i></a>
-        </li>
-        <li>
-          <a href="game.html" class="full-bar">Jouer</a>
-          <a href="game.html" class="mini-bar"><i class="bi bi-controller"></i></a>
-        </li>
-        <li>
-          <a href="galerie.html" class="full-bar">Galerie</a>
-          <a href="galerie.html" class="mini-bar"><i class="bi bi-card-image"></i></a>
-        </li> 
-        <!-- <li>
-          <a href="contact.html" class="full-bar">Contact</a>
-          <a href="contact.html" class="mini-bar"><i class="bi bi-person-lines-fill"></i></a>
-        </li> -->
-      </ul>
-      <div class="container">
-        <button type="button" id="theme-toggle-btn" class="btn btn-light" aria-label="Theme Switch Button"><i class="bi bi-lightbulb"></i></button>
-      </div>
-      <div class="itchContainer">
-        <a href="https://kaytomasu.itch.io/" id="itch" target="_blank" aria-label="itch.io link"><i class="fab fa-itch-io fa-lg"></i></a>
-      </div>
-    </nav>
-
-          <!-- Page Content -->
-    <div id="content">
-            <button type="button" id="sidebarCollapse" class="navbar-btn active" aria-label="Sidebar Button">
-            <span></span>
-            <span></span>
-            <span></span>
-            </button>
-
-            <div class="pdc">
-              <h1>Bonjour !</h1>
-              <p>Si vous êtes là, c'est que vous avez trouvé mon site de présentation dans le cadre de la formation FIF Level One à <a href="formation.html" aria-label="link to formation page">Mode83.</a></p>
-              <h2>Qui suis-je ?</h2>
-              <p>Florian, 25 ans, je suis passionné d'automobile et de jeu vidéo. J'aime la programmation, et plus particulièrement le code "graphique", comprenant notamment les shaders.</p>
-              <h2>Pourquoi suis-je dans cette formation ?</h2>
-              <p>Je suis ici afin de développer mes compétences diverses et variées, tel que le développement, la modélisation 3D, le design, ou même pour apprendre tout type de technologies (tel que les technologies web)</p>
-              <h2>Que fais-je ?</h2>
-              <p>Dans cette formation, j'ai notamment été présent sur la partie developpement des niveaux, tel que le niveau de la montagne ou même du menu principal (lié au jeu réalisé dans le cadre de la formation)</p>
-              <p>Plus personnellement, et comme précisé plus tôt, je suis un adorateur des shaders, j'ai été capable d'apprendre le RayMarching (bon fichier .frag à joindre), ou de réaliser du post process pour mon jeu "Steal And Go!!"</p>
-              <div style="display: flex; justify-content: center; align-items: center; width: auto; height: auto; overflow: hidden; flex: 1;"><canvas class="glslCanvas" data-fragment-url="frag/march.frag" width="600" height="400" aria-label="Shader Fragment"></canvas></div>
-              <h2>Steal And Go? Kesako?</h2>
-              <p>"Steal And Go!!" est un jeu que j'ai réalisé en 48h lors de la <a href="https://itch.io/jam/kenney-jam-2024" target="_blank" aria-label="link to kenney-jam-2024"> Kenney Jam 2024 </a> (tenu du 19 juillet 2024 au 21 juillet 2024), se trouvant être une Game Jam où la difficulté est de créer un jeu, un concept ainsi que tout ce qui va avec, en partant d'assets pré-fait par Kenney.</p>
-              <div style="display: flex; justify-content: center; align-items: center; width: auto; height: auto; overflow: hidden; flex: 1;"><iframe frameborder="0" src="https://itch.io/embed/2846453?dark=true" width="552" height="167" aria-label="Itch.io link"><a href="https://kaytomasu.itch.io/steal-and-go">Steal And Go!! by Kaytomasu</a></iframe></div>
-            </div>
-            
-            <footer class="text-center text-lg-start" id="footer">
-              <!-- Footer -->
-                  <div class="text-lg-start p-3">
-                      @ 2024 Copyright: Florian Devin 
-                      <a href="pdc.html" id="cgu" aria-label="Politique de confidentialité link">Politique de confidentialité</a>
-                      <a href="cgu.html" id="cgu2" aria-label="CGU link">Conditions Générales d'Utilisations</a>
-                  </div>
-              </footer>
-      </nav>
-    </div>
-  </div>
-  </body>
+<html lang=fr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width, height=device-height, initial-scale=1">
+<meta name=description content="Site de prÃ©sentation de projet FIF Level-One">
+<meta name=author content=DJV-Florian>
+<meta name=copyright content="Florian Devin">
+<meta name=robots content="noindex, nofollow">
+<title>FIF Level One - Florian</title>
+<link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css rel=stylesheet integrity=sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH crossorigin=anonymous>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin=anonymous referrerpolicy=no-referrer />
+<link rel=stylesheet href=style/style.css>
+<script src=js/script.js></script>
+<script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js integrity=sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm crossorigin=anonymous></script>
+<script type=text/javascript src=https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js></script>
+</head>
+<body data-bs-theme=light class="d-flex flex-column min-vh-100">
+<div class=wrapper>
+<nav id=sidebar class=active>
+<div class=sidebar-header>
+<h3 class=sidebar-title>FIF - Level One</h3>
+<strong>FIF</strong>
+</div>
+<ul class="list-unstyled components">
+<li>
+<a href=index.html class=full-bar>Accueil</a>
+<a href=index.html class=mini-bar><i class="bi bi-house-fill"></i></a>
+</li>
+<li>
+<a href=formation.html class=full-bar>Formation</a>
+<a href=formation.html class=mini-bar><i class="bi bi-book-fill"></i></a>
+</li>
+<li>
+<a href=game.html class=full-bar>Jouer</a>
+<a href=game.html class=mini-bar><i class="bi bi-controller"></i></a>
+</li>
+<li>
+<a href=galerie.html class=full-bar>Galerie</a>
+<a href=galerie.html class=mini-bar><i class="bi bi-card-image"></i></a>
+</li>
+</ul>
+<div class=container>
+<button type=button id=theme-toggle-btn class="btn btn-light" aria-label="Theme Switch Button"><i class="bi bi-lightbulb"></i></button>
+</div>
+<div class=itchContainer>
+<a href=https://kaytomasu.itch.io/ id=itch target=_blank aria-label="itch.io link"><i class="fab fa-itch-io fa-lg"></i></a>
+</div>
+</nav>
+<div id=content>
+<button type=button id=sidebarCollapse class="navbar-btn active" aria-label="Sidebar Button">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<div class=pdc>
+<h1>Bonjour !</h1>
+<p>Si vous Ãªtes lÃ , c'est que vous avez trouvÃ© mon site de prÃ©sentation dans le cadre de la formation FIF Level One Ã <a href=formation.html aria-label="link to formation page">Mode83.</a></p>
+<h2>Qui suis-je ?</h2>
+<p>Florian, 25 ans, je suis passionnÃ© d'automobile et de jeu vidÃ©o. J'aime la programmation, et plus particuliÃ¨rement le code "graphique", comprenant notamment les shaders.</p>
+<h2>Pourquoi suis-je dans cette formation ?</h2>
+<p>Je suis ici afin de dÃ©velopper mes compÃ©tences diverses et variÃ©es, tel que le dÃ©veloppement, la modÃ©lisation 3D, le design, ou mÃªme pour apprendre tout type de technologies (tel que les technologies web)</p>
+<h2>Que fais-je ?</h2>
+<p>Dans cette formation, j'ai notamment Ã©tÃ© prÃ©sent sur la partie developpement des niveaux, tel que le niveau de la montagne ou mÃªme du menu principal (liÃ© au jeu rÃ©alisÃ© dans le cadre de la formation)</p>
+<p>Plus personnellement, et comme prÃ©cisÃ© plus tÃ´t, je suis un adorateur des shaders, j'ai Ã©tÃ© capable d'apprendre le RayMarching (bon fichier .frag Ã joindre), ou de rÃ©aliser du post process pour mon jeu "Steal And Go!!"</p>
+<div style=display:flex;justify-content:center;align-items:center;width:auto;height:auto;overflow:hidden;flex:1><canvas class=glslCanvas data-fragment-url=frag/march.frag width=600 height=400 aria-label="Shader Fragment"></canvas></div>
+<h2>Steal And Go? Kesako?</h2>
+<p>"Steal And Go!!" est un jeu que j'ai rÃ©alisÃ© en 48h lors de la <a href=https://itch.io/jam/kenney-jam-2024 target=_blank aria-label="link to kenney-jam-2024"> Kenney Jam 2024 </a> (tenu du 19 juillet 2024 au 21 juillet 2024), se trouvant Ãªtre une Game Jam oÃ¹ la difficultÃ© est de crÃ©er un jeu, un concept ainsi que tout ce qui va avec, en partant d'assets prÃ©-fait par Kenney.</p>
+<div style=display:flex;justify-content:center;align-items:center;width:auto;height:auto;overflow:hidden;flex:1><iframe frameborder=0 src="https://itch.io/embed/2846453?dark=true" width=552 height=167 aria-label="Itch.io link"><a href=https://kaytomasu.itch.io/steal-and-go>Steal And Go!! by Kaytomasu</a></iframe></div>
+</div>
+<footer class="text-center text-lg-start" id=footer>
+<div class="text-lg-start p-3">
+@ 2024 Copyright: Florian Devin
+<a href=pdc.html id=cgu aria-label="Politique de confidentialitÃ© link">Politique de confidentialitÃ©</a>
+<a href=cgu.html id=cgu2 aria-label="CGU link">Conditions GÃ©nÃ©rales d'Utilisations</a>
+</div>
+</footer>
+</nav>
+</div>
+</div>
+</body>
 </html>
